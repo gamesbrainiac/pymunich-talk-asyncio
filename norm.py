@@ -11,9 +11,8 @@ if __name__ == '__main__':
 
     # Making a HTTP GET request
     resp = requests.get(
-        "http://eoimages.gsfc.nasa.gov/images/"
-        "imagerecords/73000/73751/"
-        "world.topo.bathy.200407.3x21600x21600.D1.jpg")
+        "http://effigis.com/wp-content/uploads/"
+        "2015/02/Airbus_Pleiades_50cm_8bit_RGB_Yogyakarta.jpg")
 
     # Checking the response to see if everything is OK,
     # this is what the 200 code signifies

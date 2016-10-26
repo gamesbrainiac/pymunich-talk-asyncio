@@ -62,11 +62,11 @@ async def download(url, parts):
 
 
 if __name__ == '__main__':
-    image_url = "http://eoimages.gsfc.nasa.gov/" \
-                "images/imagerecords/73000/73751/" \
-                "world.topo.bathy.200407.3x21600x21600.D1.jpg"
+    image_url = \
+        "http://effigis.com/wp-content/uploads/" \
+        "2015/02/Airbus_Pleiades_50cm_8bit_RGB_Yogyakarta.jpg"
     loop = asyncio.get_event_loop()
-    bs = loop.run_until_complete(download(image_url, 16))
+    bs = loop.run_until_complete(download(image_url, 256))
 
     print(len(bs))
     with open("test_para_async.jpeg", "wb") as fi:

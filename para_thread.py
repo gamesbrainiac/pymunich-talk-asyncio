@@ -38,11 +38,11 @@ def download(url, parts):
 
 
 if __name__ == '__main__':
-    image_url = "http://eoimages.gsfc.nasa.gov/" \
-                "images/imagerecords/73000/73751/" \
-                "world.topo.bathy.200407.3x21600x21600.D1.jpg"
+    image_url = \
+        "http://effigis.com/wp-content/uploads/" \
+        "2015/02/Airbus_Pleiades_50cm_8bit_RGB_Yogyakarta.jpg"
 
-    bs = download(image_url, 16)
+    bs = download(image_url, 64)
     print(len(bs))
     with open('test_para_thread.jpeg', 'wb') as fi:
         fi.write(bs)
